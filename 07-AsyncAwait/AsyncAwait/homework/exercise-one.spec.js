@@ -56,7 +56,7 @@ describe('exercise one (involving poem one)', function () {
 		xit('logs the first stanza', function (done) {
 			exercise.problemA();
 			setTimeout(function () {
-				expect(blue).to.have.been.called.with(stanzas[0]);
+				expect(blue).to.have.been.called.wxith(stanzas[0]);
 				done();
 			}, 250);
 		});
@@ -68,8 +68,8 @@ describe('exercise one (involving poem one)', function () {
 		xit('logs the second and third stanzas in any order', function (done) {
 			exercise.problemB();
 			setTimeout(function () {
-				expect(blue).to.have.been.called.with(stanzas[1]);
-				expect(blue).to.have.been.called.with(stanzas[2]);
+				expect(blue).to.have.been.called.wxith(stanzas[1]);
+				expect(blue).to.have.been.called.wxith(stanzas[2]);
 				done();
 			}, 500);
 		});
@@ -96,9 +96,9 @@ describe('exercise one (involving poem one)', function () {
 		xit('logs the fourth stanza or an error if one occurs', function (done) {
 			exercise.problemD();
 			setTimeout(function () {
-				var blueCalledWithStanza = (getCall(blue, 0)[0] == stanzas[3]);
-				var magentaCalledWithError = (getCall(magenta, 0)[0] instanceof Error);
-				var exactlyOneOccurred = exactlyOneIsTrue(blueCalledWithStanza, magentaCalledWithError);
+				var blueCalledWxithStanza = (getCall(blue, 0)[0] == stanzas[3]);
+				var magentaCalledWxithError = (getCall(magenta, 0)[0] instanceof Error);
+				var exactlyOneOccurred = exactlyOneIsTrue(blueCalledWxithStanza, magentaCalledWxithError);
 				expect(exactlyOneOccurred).to.equal(true);
 				done();
 			}, 250);
